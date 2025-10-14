@@ -1,0 +1,25 @@
+<header class="header">
+    <a href="/" class="header__logo">Painel de Criador</a>
+
+    <nav class="header__nav">
+        <ul>
+            <li>
+                <a href="/" class="<%= isActiveRoute('/', currentRoute) %>">Home</a>
+            </li>
+            <li>
+                <a href="/sobre" class="<%= isActiveRoute('/sobre', currentRoute) %>">Sobre</a>
+            </li>
+            <li>
+                <a href="/admin" class="<%= isActiveRoute('/admin', currentRoute) %>">Login</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="header__button">
+        <a href="/logout">
+            Logout
+        </a>
+    </div>
+
+</header>

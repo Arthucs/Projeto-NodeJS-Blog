@@ -1,0 +1,35 @@
+<div class="author">
+    <h1 class="author__heading">Boas vindas ao <strong>TechBlog</strong>!</h1>
+    <p class="author__body">
+        Exemplo de um pequeno blog sobre tecnologia. Sinta-se a vontade para explorar.
+    </p>
+</div>
+
+<img src="/img/keyboard.avif" alt="enlighted entrance" class="main-img" width="900" height="480">
+
+<section class="articles">
+    <h2 class="article__heading">Últimos Posts</h2>
+    
+    <ul class="article-ul">
+        <% data.forEach(post => { %>
+
+        <li>
+            <a href="/post/<%= post._id %>">
+                <span><%= post.title %></span>
+                <span class="article__date"><%= post.createdAt.toDateString() %></span>
+            </a>
+        </li>
+
+        <% }) %>
+    </ul>
+
+    <!-- <div class="pagination"> -->
+        <% if (nextPage !== null) { %>
+            <a href="/?page=<%= nextPage %>" class="pagination">&lt; Ver Posts Antigos</a>
+        <% } %>
+        <% if (current > 1) { %>
+            <a href="/?page=<%= prePage %>" class="pagination">Voltar</a>
+        <% } %>
+    
+    
+</section>
