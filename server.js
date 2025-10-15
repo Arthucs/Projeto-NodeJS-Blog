@@ -50,5 +50,5 @@ app.use("/", require("./app/routes/main"));
 app.use("/", require("./app/routes/admin"));
 
 app.listen(PORT, () => {
-  console.log(`Escutando na porta ${PORT}`);
+  console.log(`Servidor escutando na porta ${PORT}`);
 });
