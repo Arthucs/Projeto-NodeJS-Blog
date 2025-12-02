@@ -32,7 +32,6 @@ npm install nodemon --save-dev
 ### 3. Configurar Banco de dados com MongoDB
 - Crie um banco de dados com MongoDB atavés do [site oficial](https://www.mongodb.com/) ou outro método.
 - Substitua os atributos do arquivo ".env.example" respectivamente pela URI de seu DB, e pelo "secret" que desejar.
--    
 
 ### 4. Popule o DB e execute o servidor
 ```bash
